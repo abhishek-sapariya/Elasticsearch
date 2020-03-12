@@ -1,10 +1,10 @@
 # Elasticsearch
 
-Cluster Formation
+<h2><b>Cluster Formation</b></h2>
 
-Creating 3 node cluster
+<h3>Creating 3 node cluster</h3>
 
-For Node 1 (Master node)
+<b>For Node 1 (Master node)</b>
 
 •	cluster.name: cluster-1 <br />
 •	node.name: master-1 <br />
@@ -20,7 +20,7 @@ For Node 1 (Master node)
 •	discovery.zen.ping.unicast.hosts: [“192.168.43.90:9201”] <br />
 
 
-For Node 2 (Data node)
+<b>For Node 2 (Data node)</b>
 
 •	cluster.name: cluster-1 <br />
 •	node.name: data-1 <br />
@@ -35,7 +35,7 @@ For Node 2 (Data node)
 •	discovery.seed_hosts: [“localhost:9301”] <br /> 
 
 
-For Node 3 (Coordinating node)
+<b>For Node 3 (Coordinating node)</b>
 
 •	cluster.name: cluster-1 <br />
 •	node.name: coord-1 <br />
