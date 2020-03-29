@@ -1,0 +1,74 @@
+PUT netflix1
+{
+  "mappings": {
+       "properties": {
+           "director":{
+        "type": "keyword",
+        "null_value": "NULL"
+      },
+      "show_id":{
+        "type": "object", 
+        "enabled: false
+      },
+      "title":{
+        "type": "keyword"
+      },
+      "cast":{
+        "type":"keyword",
+        "null_value": "NULL",
+        "fields": {
+          "english":{
+            "type":"text",
+            "analyzer":"english"
+          }
+        }
+      },
+      "country":{
+        "type": "keyword",
+        "null_value": "NULL",
+        "fields": {
+          "english":{
+            "type":"text",
+            "analyzer":"english"
+          }
+        }
+      },
+      "date_added":{
+        "type": "object", 
+        "enabled":false
+      },
+      "release_year":{
+        "type": "keyword"
+      },
+      "rating":{
+        "type": "object", 
+        "enabled":false
+      },
+      "duration":{
+        "type": "object", 
+        "enabled": false
+      },
+      "listed_in":{
+        "type":"text",
+        "fields": {
+          "english":{
+            "type":"text",
+            "analyzer":"english"
+          }
+        }
+      },
+      "description":{
+        "type": "text",
+        "fields": {
+          "english":{
+            "type":"text",
+            "analyzer":"english"
+          }
+        }
+      },
+      "type":{
+        "type": "keyword"
+      }
+    }
+  }
+}
